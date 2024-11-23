@@ -50,6 +50,13 @@ in
         --replace-fail 'lazy-seq "0.1.0"' 'lazy-seq "0.0.0"'
     '';
   };
+  medea = old: {
+    # For some reason comparse 3 gets interpreted as comparse 0.0.0??
+    postPatch = ''
+      substituteInPlace medea.egg \
+        --replace-fail 'comparse "0.3.0"' 'comparse "0.0.0"'
+    '';
+  };
   epoxy = old:
     (addToPropagatedBuildInputsWithPkgConfig pkgs.libepoxy old)
     // lib.optionalAttrs stdenv.cc.isClang {
