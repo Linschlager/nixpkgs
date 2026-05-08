@@ -98,5 +98,9 @@
     "1.21.11": {
         "hash": "sha256-zzdPKvnXHfzHU0Pze3IqerywkcV0ExuV47E8b8LLj64=",
         "version": "1.21.11-69"
+    },
+    "26.1.2": {
+        "hash": "",
+        "version": "26.1.2-60"
     }
 }

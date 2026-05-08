@@ -27,7 +27,7 @@ class Version:
 
 
 class VersionManager:
-    def __init__(self, base_url: str = "https://api.papermc.io/v2/projects/paper"):
+    def __init__(self, base_url: str = "https://fill.papermc.io/v3/projects/paper"):
         self.versions: list[Version] = []
         self.base_url: str = base_url
 
